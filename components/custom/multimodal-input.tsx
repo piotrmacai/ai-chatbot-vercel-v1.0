@@ -21,14 +21,14 @@ import { Textarea } from '../ui/textarea';
 
 const suggestedActions = [
   {
-    title: 'What is the weather',
-    label: 'in San Francisco?',
-    action: 'What is the weather in San Francisco?',
+    title: 'Create text-to-image prompt',
+    label: 'from pasted image',
+    action: 'Create text-to-image prompt for Midjourney or Flux models from pasted image',
   },
   {
-    title: "Answer like I'm 5,",
-    label: 'why is the sky blue?',
-    action: "Answer like I'm 5, why is the sky blue?",
+    title: "Help me to create a stunning prompt",
+    label: 'end expand my basic prompt',
+    action: "Help me to create a stunning prompt end expand my basic prompt",
   },
 ];
 

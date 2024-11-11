@@ -37,13 +37,13 @@ export const UserIcon = () => {
   );
 };
 
-export const AttachmentIcon = () => {
+export const AttachmentIcon = ({ size = 17 }) => {
   return (
     <svg
-      height="16"
+    height={size}
       strokeLinejoin="round"
       viewBox="0 0 16 16"
-      width="16"
+      width={size}
       style={{ color: "currentcolor" }}
     >
       <path

@@ -5,6 +5,7 @@ import { customModel } from '@/ai';
 import { auth } from '@/app/(auth)/auth';
 import { deleteChatById, getChatById, saveChat } from '@/db/queries';
 import { Model, models } from '@/lib/model';
+import { systemPrompt } from './customPrompt';
 
 export async function POST(request: Request) {
   const {
@@ -29,7 +30,8 @@ export async function POST(request: Request) {
   const result = await streamText({
     model: customModel(model),
     system:
-      'you are a friendly assistant! keep your responses concise and helpful.',
+      // 'you are a friendly assistant! keep your responses concise and helpful.',
+    systemPrompt,
     messages: coreMessages,
     maxSteps: 5,
     tools: {
